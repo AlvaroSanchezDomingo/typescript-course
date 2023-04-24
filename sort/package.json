@@ -1,0 +1,18 @@
+{
+  "name": "sort",
+  "version": "1.0.0",
+  "description": "To run typescript on node we make use of the npm libraries typescript and ts-node installed locally\r npm install -g typescript ts-node",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
